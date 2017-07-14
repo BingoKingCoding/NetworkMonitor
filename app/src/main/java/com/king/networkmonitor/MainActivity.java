@@ -22,6 +22,7 @@ public class MainActivity extends BaseActivity
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("当前处于数据网络下，会耗费较多流量，是否继续？");
+            builder.setCancelable(false);
             builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
             {
                 @Override
